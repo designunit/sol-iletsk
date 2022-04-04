@@ -20,10 +20,15 @@
     justify-content: space-between;
     align-items: flex-end;
 }
-
-.logos>div {
+.logos > a {
+    display: block;
     max-width: 200px;
 }
+.logos span {
+    display: block !important;
+    height: 100%;
+}
+
 
 .up {
     display: flex;
@@ -35,6 +40,7 @@
 }
 .up h1 {
     position: relative;
+    margin-top: unset;
 }
 
 .text {
@@ -49,7 +55,6 @@
     flex: 0 1 40%;
     padding: 2rem;
     background-color: var(--color-white);
-    opacity: .8;
     color: var(--color-text);
     display: flex;
     flex-flow: column;
@@ -66,9 +71,9 @@
         max-height: unset;
         overflow: unset;
     }
-
-    .container img {
-        object-position: unset;
+    .up {
+        justify-content: flex-start;
+        gap: 4rem;
     }
 }
 
@@ -79,11 +84,10 @@
 
     .up {
         width: 100%;
+        gap: unset;
+        align-items: center;
         margin-left: unset;
         padding: 0 20px;
-    }
-
-    .h1 {
         padding-top: 2rem;
     }
 
@@ -93,6 +97,7 @@
 
     .logos {
         gap: 4rem;
+        margin-top: 4rem;
         padding-right: unset;
         align-items: center;
     }

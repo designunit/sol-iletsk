@@ -7,7 +7,6 @@ import { Flex } from '../Flex'
 import unit from '../../../public/static/unit.jpg'
 import gerb from '../../../public/static/gerb.png'
 
-
 export const Hero: React.FC<{ titleText: string, description: string[] }> = ({ titleText, description }) => {
 
     return (
@@ -43,20 +42,24 @@ export const Hero: React.FC<{ titleText: string, description: string[] }> = ({ t
             </div>
 
             <div className={s.logos}>
-                <div>
+                <a
+                    href='https://soliletsk.ru/'
+                    target={'_blank'}
+                >
                     <Image
                         src={gerb}
                         objectFit='cover'
                     />
-                </div>
-                <div>
-                    <a href='https://unit4.io/'>
-                        <Image
-                            src={unit}
-                            objectFit='cover'
-                        />
-                    </a>
-                </div>
+                </a>
+                <a
+                    href='https://unit4.io/'
+                    target={'_blank'}
+                >
+                    <Image
+                        src={unit}
+                        objectFit='cover'
+                    />
+                </a>
             </div>
         </div>
     )

@@ -1,14 +1,7 @@
-import { GetStaticProps, NextPage } from 'next'
+import { NextPage } from 'next'
 import { Hero } from 'src/components/Hero'
-import { ParallaxProvider } from 'react-scroll-parallax'
 import { PageLayout } from 'src/components/PageLayout'
-import React, { useContext, useState } from 'react'
-import { ConfigContext } from 'src/context/config'
 import { NextSeo } from 'next-seo'
-import Error from 'next/error'
-import { Modal } from 'src/components/Modal'
-import { WhatIs } from 'src/components/WhatIs'
-import Image from 'next/image'
 
 interface PageProps {
 
@@ -24,8 +17,13 @@ const Index: NextPage<PageProps> = props => {
                 title={`Соль-Илецк`}
                 openGraph={{
                     title: `Соль-Илецк`,
+                    description: `Сбор мнений жителей Соль-Илецка`,
                     images: [
-                        { url: '/static/bg.png' },
+                        {
+                            url: '/static/bg.png',
+                            width: 842,
+                            height: 595,
+                        },
                     ],
                 }}
             />
