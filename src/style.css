@@ -1,0 +1,78 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); */
+
+@font-face {
+    font-family: 'RussoOne';
+    src: url('/static/fonts/RussoOne.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'DinPro';
+    src: url('/static/fonts/DINPro.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'DinProB';
+    src: url('/static/fonts/DINPro-B.woff2') format('woff2');
+    font-weight: Bold;
+}
+
+:root {
+    --border-radius: 0px;
+    --button-border-radius: 0px;
+
+    --color-red: #F46B5D;
+    --color-blue: #206D99;
+
+    --color-text: black;
+
+    --font-family: 'DinPro', Helvetica, sans-serif;
+    --font-size: 14px;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-size: var(--font-size);
+    font-family: var(--font-family);
+    line-height: 24px;
+}
+
+* { 
+    box-sizing: border-box;
+}
+
+main {
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+h2 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 48px;
+    color: black;
+
+    margin: 0px;
+}
+
+h3 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 26px;
+    color: black;
+
+    margin: 0px;
+}
+
+@media screen and (max-width : 480px) {
+    :root {
+        --font-size: 18px;
+    }
+}

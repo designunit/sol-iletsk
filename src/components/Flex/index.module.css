@@ -1,0 +1,12 @@
+.container {
+    display: flex;
+}
+
+@media screen and (max-width: 1280px) {
+    .container {
+        flex-direction: column;
+    }
+    .mobileReverse {
+        flex-flow: column-reverse;
+    }
+}
