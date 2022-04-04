@@ -1,8 +1,8 @@
 .title {
-    font-family: RussoOne;
     align-self: flex-start;
     text-transform: uppercase;
-    font-weight: 400;
+    font-weight: 900;
+    color: var(--color-white);
 }
 
 .h1 {

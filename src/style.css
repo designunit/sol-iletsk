@@ -1,33 +1,14 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); */
-
-@font-face {
-    font-family: 'RussoOne';
-    src: url('/static/fonts/RussoOne.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'DinPro';
-    src: url('/static/fonts/DINPro.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'DinProB';
-    src: url('/static/fonts/DINPro-B.woff2') format('woff2');
-    font-weight: Bold;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
 
 :root {
     --border-radius: 0px;
     --button-border-radius: 0px;
 
-    --color-red: #F46B5D;
-    --color-blue: #206D99;
+    --color-red: #a43b35;
+    --color-text: #393536;
+    --color-white: #fff8f2;
 
-    --color-text: black;
-
-    --font-family: 'DinPro', Helvetica, sans-serif;
+    --font-family: 'Roboto', Helvetica, sans-serif;
     --font-size: 14px;
 }
 

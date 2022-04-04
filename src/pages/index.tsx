@@ -21,16 +21,16 @@ const Index: NextPage<PageProps> = props => {
             openModal={() => null}
         >
             <NextSeo
-                title={`Мирный`}
+                title={`Соль-Илецк`}
                 openGraph={{
-                    title: `Мирный`,
+                    title: `Соль-Илецк`,
                     images: [
-                        { url: '/static//bg.jpg' },
+                        { url: '/static/bg.png' },
                     ],
                 }}
             />
             <Hero
-                titleText='Мирный'
+                titleText='Соль-Илецк'
                 description={[
                     'Всем привет!',
                     'Это команда развития города Мирный, сформированная при поддержке компании АЛРОСА.',
