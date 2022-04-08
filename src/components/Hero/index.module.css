@@ -22,7 +22,7 @@
 }
 .logos > a {
     display: block;
-    max-width: 200px;
+    max-width: 100px;
 }
 .logos span {
     display: block !important;

@@ -4,7 +4,7 @@
     --border-radius: 0px;
     --button-border-radius: 0px;
 
-    --color-red: #a43b35;
+    --color-red: #f58536;
     --color-text: #393536;
     --color-white: #fff8f2;
 
@@ -18,7 +18,7 @@ body {
     margin: 0;
     font-size: var(--font-size);
     font-family: var(--font-family);
-    line-height: 24px;
+    line-height: 20px;
 }
 
 * { 

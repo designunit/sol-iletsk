@@ -21,22 +21,59 @@ export const Hero: React.FC<{ titleText: string, description: string[] }> = ({ t
 
             <div className={s.up}>
                 <div>
-                    <Title>
+                    <Title style={{
+                        color: 'var(--color-white)',
+                    }}>
                         {titleText}
                     </Title>
                 </div>
 
                 <Flex
-                    mobileReverse
                     className={s.text}
                 >
                     <div className={s.description}>
-                        {description.map((x, i) => <p key={i}> {x} </p>)}
+                        <Title level={2}>
+                            Набережная <br />реки Песчанки
+                        </Title>
+
+                        <p>
+                            Расскажите нам, каким вы видите будущее набережной реки Песчанки.
+                        </p>
+                        <Title level={3}>
+                            Сделать это очень просто:
+                        </Title>
+                        <ul style={{
+                            marginTop: '-.5rem',
+                        }}>
+                            <li>
+                                Предложить идею. Поделитесь вашими идеями — что должно появиться на набережной? Как бы вам хотелось проводить там время?,
+                            </li>
+                            <li>
+                                Описать ценности. Расскажите о ваших любимых местах на территории и о том, что важно сохранить при благоустройстве. Опишите, с чем ассоциируется это место — с каким событиями или фактами и почему это важно.,
+                            </li>
+                            <li>
+                                Рассказать о проблеме. Обозначьте проблемы территории, которые можно решить в будущем.,
+                            </li>
+                        </ul>
+                        <p>
+                            Выберете то, о чем вы хотите рассказать, укажите точку на карте и напишите ваш комментарий. Мнение каждого важно, ведь так мы понимаем, как и чем живет сегодня набережная.
+                        </p>
+                        {/* {description.map((x, i) => <p key={i}> {x} </p>)} */}
                     </div>
                     <Button
-                        href={'/'}
+                        href={'https://mesto.io/6XIF9T79M13LWSFZ'}
+                        // @ts-ignore
+                        target='_blank'
                     >
                         ПОСМОТРЕТЬ КАРТУ ИДЕЙ
+                    </Button>
+
+                    <Button
+                        href={'https://docs.google.com/forms/d/e/1FAIpQLScmmYVDoCHTL3R6EzP105oKVsQs3NDNRkUidxCtSgUMQYe60Q/viewform'}
+                        // @ts-ignore
+                        target='_blank'
+                    >
+                        ПРОЙТИ ОПРОС
                     </Button>
                 </Flex>
             </div>

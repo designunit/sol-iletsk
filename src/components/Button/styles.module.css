@@ -17,17 +17,19 @@
 
     --color-bg: var(--color-red);
     --color-border: var(--color-red);
+
+    transition: all .25s;
 }
 
 .button[disabled] {
     cursor: not-allowed;
 }
 
-/* .button:hover:not([disabled]) {
-    --color-text: white;
-    --color-bg: transparent;
-    --color-border: black
-} */
+.button:hover:not([disabled]) {
+    color: var(--color-red);
+    --color-bg: var(--color-white);
+    --color-border: var(--color-red);
+}
 
 /* THEME */
 
