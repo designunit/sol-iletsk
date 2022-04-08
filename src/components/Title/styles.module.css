@@ -5,10 +5,10 @@
 }
 
 .h1 {
-    font-size: 91px;
-    line-height: 75px;
+    font-size: 52px;
+    line-height: 52px;
     letter-spacing: 2px;
-    margin-bottom: 48px;
+    margin-bottom: 1rem;
 }
 
 .h2 {

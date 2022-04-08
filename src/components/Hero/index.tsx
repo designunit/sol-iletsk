@@ -12,7 +12,7 @@ export const Hero: React.FC<{ titleText: string, description: string[] }> = ({ t
     return (
         <div className={s.container}>
             <Image
-                src={'/static/bg.png'}
+                src={'/static/bg.svg'}
                 layout='fill'
                 objectFit='cover'
                 priority
@@ -24,7 +24,8 @@ export const Hero: React.FC<{ titleText: string, description: string[] }> = ({ t
                     <Title style={{
                         color: 'var(--color-white)',
                     }}>
-                        {titleText}
+                        Развитие набережной реки Песчанки <br />
+                        г. Соль-Илецк
                     </Title>
                 </div>
 
@@ -32,13 +33,12 @@ export const Hero: React.FC<{ titleText: string, description: string[] }> = ({ t
                     className={s.text}
                 >
                     <div className={s.description}>
-                        <Title level={2}>
-                            Набережная <br />реки Песчанки
-                        </Title>
-
-                        <p>
+                        {/* <p>
                             Расскажите нам, каким вы видите будущее набережной реки Песчанки.
-                        </p>
+                        </p> */}
+                        <Title level={2}>
+                            Расскажите нам, каким вы видите будущее набережной реки Песчанки
+                        </Title>
                         <Title level={3}>
                             Сделать это очень просто:
                         </Title>
@@ -46,19 +46,18 @@ export const Hero: React.FC<{ titleText: string, description: string[] }> = ({ t
                             marginTop: '-.5rem',
                         }}>
                             <li>
-                                Предложить идею. Поделитесь вашими идеями — что должно появиться на набережной? Как бы вам хотелось проводить там время?,
+                                Предложить идею. Поделитесь вашими идеями — что должно появиться на набережной? Как бы вам хотелось проводить там время?
                             </li>
                             <li>
-                                Описать ценности. Расскажите о ваших любимых местах на территории и о том, что важно сохранить при благоустройстве. Опишите, с чем ассоциируется это место — с каким событиями или фактами и почему это важно.,
+                                Описать ценности. Расскажите о ваших любимых местах на территории и о том, что важно сохранить при благоустройстве. Опишите, с чем ассоциируется это место — с каким событиями или фактами и почему это важно.
                             </li>
                             <li>
-                                Рассказать о проблеме. Обозначьте проблемы территории, которые можно решить в будущем.,
+                                Рассказать о проблеме. Обозначьте проблемы территории, которые можно решить в будущем.
                             </li>
                         </ul>
                         <p>
                             Выберете то, о чем вы хотите рассказать, укажите точку на карте и напишите ваш комментарий. Мнение каждого важно, ведь так мы понимаем, как и чем живет сегодня набережная.
                         </p>
-                        {/* {description.map((x, i) => <p key={i}> {x} </p>)} */}
                     </div>
                     <Button
                         href={'https://mesto.io/6XIF9T79M13LWSFZ'}
@@ -85,7 +84,8 @@ export const Hero: React.FC<{ titleText: string, description: string[] }> = ({ t
                 >
                     <Image
                         src={gerb}
-                        objectFit='cover'
+                        objectFit='contain'
+                        objectPosition={'right'}
                     />
                 </a>
                 <a
