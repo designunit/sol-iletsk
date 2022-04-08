@@ -19,7 +19,7 @@ const Index: NextPage<PageProps> = props => {
                     description: `Сбор мнений жителей Соль-Илецка`,
                     images: [
                         {
-                            url: '/static/bg.png',
+                            url: '/static/bg.svg',
                             width: 1920,
                             height: 1080,
                         },
