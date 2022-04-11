@@ -12,7 +12,7 @@ export const Hero: React.FC<{ titleText: string, description: string[] }> = ({ t
     return (
         <div className={s.container}>
             <Image
-                src={'/static/bg.svg'}
+                src={'/static/bg.jpg'}
                 layout='fill'
                 objectFit='cover'
                 priority
